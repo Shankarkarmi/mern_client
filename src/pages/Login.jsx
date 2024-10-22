@@ -6,7 +6,7 @@ import { toast} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const URL = "http://localhost:5000/api/auth/login";
+const URL = "https://mern01server-production.up.railway.app/api/auth/login";
 
 export const Login = () => {
     const [user, setUser] = useState({

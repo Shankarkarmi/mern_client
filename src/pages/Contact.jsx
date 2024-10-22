@@ -53,7 +53,7 @@ export const Contact = () => {
         //refresh ko rok ne k lia 
         
         try {
-            const response = await fetch("http://localhost:5000/api/form/contact", {
+            const response = await fetch("https://mern01server-production.up.railway.app/api/form/contact", {
                 method: "POST", headers: {
                     'content-Type':"application/json" },
                     body: JSON.stringify(contact),
