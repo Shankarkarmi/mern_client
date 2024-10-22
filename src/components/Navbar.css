@@ -1,0 +1,263 @@
+.con{
+    
+    max-width: 1200px;
+    margin-inline: 10rem;
+    padding: 0.5rem;
+    /* padding: 4.2rem 2.4rem; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.logo-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-brand {
+    font-size: 45px;
+    margin-right: 1rem;
+    color: #ffffff;
+
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+    margin-left: 3rem;
+    /* border: 1px solid blue; */
+    /* padding: 10px;padding: 10px; */   
+}
+
+.hover-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #fff;
+    display: none;
+    
+}
+
+
+
+
+
+ul a{
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 999;
+    /* border: 1px solid blue; */
+    color:#ffffff;
+    /* padding: 9px; */
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+}
+
+ul li a:hover{
+    color: blueviolet;
+    
+    
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #1a1919;/* Semi-transparent background */
+    /* background-image: url("/images/city-night.jpg"); */
+    color: #fff;
+     /* Optional: Glassmorphism effect */
+     /* Enhanced shadow */
+    z-index: 999;
+    height: 4rem;
+    padding: 0;
+  }
+
+nav{
+    margin-left: 0;
+    display: flex;
+}
+
+/* Menu container */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    font-size: 39px;
+    /* cursor: pointer; */
+    right: 10rem;
+    gap: 1.5rem;
+    background-color: transparent;
+   
+}
+
+/* Blog link styling */
+.Blog {
+    font-size: 30px;
+}
+
+/* Ensure the list positioning is correct */
+.menu ul {
+    
+    list-style: none;
+    
+}
+
+.menu ul li {
+    position: relative;
+
+}
+
+/* Link styling for main menu items */
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for main menu items */
+.menu ul li a:hover {
+    color: blue;
+    background-color: transparent; /* Ensure no background change */
+}
+
+
+
+/* Dropdown menu styles */
+.dropdown {
+    position: absolute;
+    top: 100%; /* Dropdown is positioned directly below the parent <li> */
+    left: 0;
+    /* Adjust width as needed */
+    background-color: transparent;
+    z-index: 999;
+    display: none;
+    padding: 0;
+    margin: 0;
+    /* Add shadow for visibility */
+}
+
+
+
+/* Dropdown link styling */
+.menu ul .dropdown li a {
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: normal;
+    border: 1px solid black;
+    border-radius: 47%;
+    margin: 0.2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul .dropdown li a:hover{
+    color: rgb(251, 251, 254);
+    background-color: black;
+}
+
+
+/* Dropdown hover effect */
+
+
+/* Show the dropdown when hovering over the parent <li> */
+.menu ul li:hover ul.dropdown {
+    display: block;
+    /* Show the dropdown on hover */
+}
+
+
+/* Ensure no background color change when clicking or hovering over IoMdArrowDropdown */
+.menu ul li:hover {
+    background-color: transparent; /* No background change on hover for parent li */
+}
+
+.menu ul li a:hover {
+    background-color: transparent; /* Prevent the background change on the parent link */
+}
+
+/* .logo-brand image{
+    width: 100px;
+    height: 100px;
+} */
+
+#checkbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #fff;
+    display: none;
+    
+    
+    
+  }
+#check {
+  display: none;  
+}
+
+
+#check:checked ~ nav ul{
+    left: 0;
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for the glass effect */
+    transition: all 0.3s ease; /* Smooth transition for appearance */
+    
+}
+
+
+
+
+@media screen and (max-width: 991px){
+    #checkbtn{
+        display: flex;
+    }
+    .hover-link{
+      display: block;
+      margin-left: 20px;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 3.5rem;
+        left: -100%;
+        
+        display: block;
+        margin: 0;
+        padding: 0;
+        
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        font-size: 45px;
+        
+    }
+    nav ul li a{
+        color: blue;
+    }
+    .con{
+        margin-inline: 0;
+    }
+    .menu{
+        right: 0;
+    }
+   
+  }

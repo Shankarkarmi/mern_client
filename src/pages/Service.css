@@ -1,0 +1,50 @@
+.services-hero .container p{
+    margin-left: 70px;
+}
+/* .services-hero{
+    background-color: #1e202c;
+}
+.services-list{
+    background-color:#2b2e3a;
+} */
+
+@media screen and (max-width: 767px) {
+    .services-hero .container p{
+        margin: 0;
+      }
+}
+
+
+.services-hero .container h1{
+    font-size: 120px;
+    color: #ffffff;
+}
+
+.services-hero .container{
+    height: 83vh;
+}
+
+.grid {
+    display: grid;
+    gap: 3rem;
+  }
+
+.services-list .grid-two-cols {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    /* border: 5px solid rgb(248, 244, 244);  */
+  }
+
+
+
+.grid-three-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    border: 1px solid rgb(248, 244, 244); /* Debugging */
+  }
+
+ 
