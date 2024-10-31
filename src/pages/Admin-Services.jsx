@@ -8,7 +8,7 @@ export const AdminServices = () => {
 
     const getAllServicesData = async () => {
         try {
-            const response = await fetch("https://mern01server-production.up.railway.app/api/data/service", {
+            const response = await fetch("https://mern01-server-tzr9.onrender.com/api/data/service", {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,

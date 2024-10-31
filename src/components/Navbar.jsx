@@ -29,7 +29,7 @@ export const Navbar = () => {
 
                 <input type="checkbox" id="check" name="" value="" checked={isChecked} onChange={() => setIsChecked(!isChecked)}/>
                 
-                   <label for="check" id="checkbtn">
+                   <label htmlFor="check" id="checkbtn">
                    <TiThMenu />
                     </label> 
                 <nav  className="nex">

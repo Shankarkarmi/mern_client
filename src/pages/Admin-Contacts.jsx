@@ -12,7 +12,7 @@ export const AdminContacts = () => {
 
     const getAllContactsData = async () => {
         try {
-            const response = await fetch("https://mern01server-production.up.railway.app/api/admin/contacts", {
+            const response = await fetch("https://mern01-server-tzr9.onrender.com/api/admin/contacts", {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,
@@ -42,7 +42,7 @@ export const AdminContacts = () => {
       // Delete the user on delete button
       const deleteContact = async (id) => {
         try {
-            const response = await fetch(`https://mern01server-production.up.railway.app/api/admin/contacts/delete/${id}`, {
+            const response = await fetch("https://mern01-server-tzr9.onrender.com/api/admin/contacts/delete/${id}", {
                 method: "DELETE",
                 headers: {
                     Authorization: authorizationToken,

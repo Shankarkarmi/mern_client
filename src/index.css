@@ -616,9 +616,7 @@ table button:hover {
 .service-card{
   width: 100%;
   padding: 2rem;
-  border: none; /* Removed border for a cleaner look */
-  border-radius: 12px; /* Rounded corners */
-  background-color: #ffffff; /* White background for a clean appearance */
+  padding: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
   display: flex; /* Use flexbox for alignment */
@@ -769,3 +767,6 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
   }
 
 }
+
+
+
