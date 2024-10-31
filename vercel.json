@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/About", "destination": "/index.html" },
+    { "source": "/Contact", "destination": "/index.html" },
+    { "source": "/Service", "destination": "/index.html" },
+    { "source": "/Register", "destination": "/index.html" },
+    { "source": "/Login", "destination": "/index.html" },
+    { "source": "/Logout", "destination": "/index.html" },
+    { "source": "/admin", "destination": "/index.html" },
+    { "source": "/admin/users", "destination": "/index.html" },
+    { "source": "/admin/contact", "destination": "/index.html" },
+    { "source": "/admin/service", "destination": "/index.html" },
+    { "source": "/404", "destination": "/index.html" }
+  ]
+}
